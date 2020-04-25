@@ -327,9 +327,7 @@ footer {
         height: 25px;
     }
     header ul li ul{display: none;}
-    #check:checked ~ ul{
-        left: 0;
-    }
+    #check:checked ~ ul{left: 0;}
     header ul li:hover ul{display: block;}
     header ul li ul{
         position: relative;
