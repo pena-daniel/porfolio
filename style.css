@@ -96,7 +96,9 @@ a:hover{
 .one{
     position: relative;
     left: 25px;
-    background-color: black;
+    background: url(image/mes.jpg);
+    background-position: center;
+    background-size: cover;
     animation-name: transition;
     animation-duration: 4s;
     animation-timing-function: ease-in;
@@ -104,7 +106,9 @@ a:hover{
     animation-iteration-count: infinite;
 }
 .two{
-     background-color: aqua;
+     background: url(image/mess.jpg);
+     background-position: center;
+    background-size: cover;
      animation-name: transition1;
      animation-duration: 4s;
      animation-timing-function: ease-in;
@@ -112,7 +116,9 @@ a:hover{
      animation-iteration-count: infinite;
     }  
 .three{
-    background-color: blue;
+    background: url(image/messi.jpg);
+    background-position: center;
+    background-size: cover;
     animation-name: transition2;
     animation-duration: 4s;
     animation-timing-function: ease-in;
@@ -120,7 +126,9 @@ a:hover{
     animation-iteration-count: infinite;
 }
 .four{
-    background-color: red;
+    background: url(image/messii.jpg);
+    background-position: center;
+    background-size: cover;
     animation-name: transition3;
     animation-duration: 4s;
     animation-timing-function: ease-in;
@@ -243,12 +251,14 @@ aside p{
     margin-bottom: 8px;
     color: #40424a;
 }
+#Exploits li h2{font-size: 30px;}
 #Experience li h3,#Exploits li h3{
     font-size: 20px;
     color: #40424a;
     margin-bottom: 5px;
     font-weight: 600;
     font-family: 'Josefin Sans', sans-serif;
+    
 }
 #Experience li h4,#Exploits li h4{
     font-size: 10px;
@@ -264,7 +274,67 @@ aside p{
     color: #808181;
     line-height: 1.8;
 }
+#Hobbies{padding-bottom: 3rem;}
+#Hobbies h4{
+    text-align: center;
+    line-height: 40px;
+    animation: apparution 3s infinite ;
+}
+#Hobbies h4:nth-of-type(1){animation: apparution1 5s infinite ;}
+#Hobbies h4:nth-of-type(2){animation: apparution2 5s infinite ;}
+#Hobbies h4:nth-of-type(3){animation: apparution3 5s infinite ;}
+#Hobbies h4:nth-of-type(4){animation: apparution4 5s infinite ;}
+#Hobbies h4:nth-of-type(5){animation: apparution5 5s infinite ;}
+    
 
+@keyframes apparution1{
+    0%{font-size: 5px;}
+    20%{font-size: 25px;}
+    100%{font-size: 25px;}
+}        
+@keyframes apparution2{
+    0%{font-size: 0px;}
+    20%{font-size: 5px;}
+    40%{font-size: 25px;}
+    100%{font-size: 25px;}
+}        
+@keyframes apparution3{
+    0%{font-size: 0px;}
+    20%{font-size: 0px;}
+    40%{font-size: 5px;}
+    60%{font-size: 25px;}
+    100%{font-size: 25px;}
+}        
+@keyframes apparution4{
+    0%{font-size: 0px;}
+    20%{font-size: 0px;}
+    40%{font-size: 0px;}
+    60%{font-size: 5px;}
+    80%{font-size: 25px;}
+    100%{font-size: 25px;}
+}        
+@keyframes apparution5{
+    0%{font-size: 0px;}
+    20%{font-size: 0px;}
+    40%{font-size: 0px;}
+    60%{font-size: 0px;}
+    80%{font-size: 5px;}
+    100%{font-size: 25px;}
+}        
+    
+
+#Propos{
+    background-color: #c7ecee;
+    height: 400px;
+    padding-bottom: 3rem;
+}#Propos p{
+    text-align: justify;
+    padding: 0 50px 0 50px;
+    margin-bottom: 3rem;
+}
+#Propos p::first-letter{
+    margin-left: 5rem;
+}
 /* footer */
 footer {
     width: 100%;
